@@ -1,13 +1,75 @@
-.App {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-ivory: #f6f1e8;
+  --bg-cream: #efe2c7;
+  --ink: #1d2433;
+  --ink-soft: #49556b;
+  --navy: #172235;
+  --navy-deep: #0f1729;
+  --gold: #caa95a;
+  --gold-soft: #e9d39e;
+  --panel: rgba(255, 255, 255, 0.66);
+  --shadow: rgba(17, 24, 39, 0.18);
+  --line: rgba(23, 34, 53, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(202, 169, 90, 0.22), transparent 28%),
+    linear-gradient(180deg, #f9f5ee 0%, #f2ebdf 100%);
+  color: var(--ink);
+  font-family: "Inter", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+a {
+  transition: all 0.25s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+p,
+span,
+li,
+a {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+::selection {
+  background: rgba(202, 169, 90, 0.3);
 }
